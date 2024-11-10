@@ -1,0 +1,441 @@
+@import url('https://rsms.me/inter/inter.css');
+
+@font-face {
+  font-family: "SourGummy";
+  src: url("../public/fonts/SourGummy-ExtraLight.ttf") format("truetype");
+  font-weight: 200; /* Adjust weight based on your needs */
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GlancyrThin';
+  src: url('../public/fonts/Glancyr-Thin.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GlancyrSemiBold';
+  src: url('../public/fonts/Glancyr-SemiBold.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GlancyrVariable';
+  src: url('../public/fonts/Glancyr\ Variable-VF.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {  
+ font-family: "GlancyrSemiBold", sans-serif;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Apply the font */
+body {
+  background: #000;
+  /* background: hsl(250, 100%, 81%); */
+  overflow-x: hidden;
+  color: hsl(250, 50%, 52%);
+}
+html {
+  font-family: 'Inter', sans-serif;
+}
+.container {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  height: 90vh;
+  width: 100%;
+  min-height: 30em;
+  padding: 30px;
+  margin-bottom: 50px;
+
+}
+.container h1{
+  font-size: 3em;
+  margin: 10px 0px 20px 0px;
+}
+.Scene-canv{
+  background: rgb(224, 222, 222);
+  background: linear-gradient(0deg, rgba(224, 222, 222, 1) 0%, rgba(173, 152, 224, 1) 100%);
+   border-radius: 50px 50px 0px 0px;
+}
+.logo-container{
+  background-color: #000;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  width: 300px;
+  height: 120px;
+  border-radius: 0px 0px 50px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo-container a{
+  font-size: 3em;
+}
+nav{
+  width: 100%;
+  height: auto;
+  padding: 0px;
+}
+.header-content{
+  position: absolute;
+  top: 50px;
+  left: 32%;
+  width: 100%;
+ }
+nav ul{
+  font-family: "GlancyrThin", sans-serif;
+  background-color: #6455A5;
+  border-radius: 15px;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+  text-decoration: none;
+  list-style: none;
+  font-size: 1em;
+  padding: 5px;
+  letter-spacing: 2px;
+}
+nav ul li{
+  color: #ECECEC;
+  margin: 0px;
+  padding: 15px 30px;
+  text-decoration: none;
+  list-style: none;
+  transition: all 0.4s;
+}
+nav ul li:hover{
+  background-color: #ECECEC;
+  color: #6455A5;
+  border-radius: 15px;
+  margin: 0px;
+  padding: 15px 30px;
+  text-decoration: none;
+  list-style: none;
+}
+a{
+  all: unset;
+  cursor: pointer;
+}
+.header-info-conatiner{
+  position: relative;
+  width: 25%;
+  height: 90vh;
+  background-color: transparent;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding: 20px;
+}
+.avatar-container {
+  margin: 0;
+  width: 280px;
+  height:310px;
+  border-radius: 50% 70% / 60% 40%;
+  background-color: #AD98E0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.avatar-container img{
+  width: 250px;
+  height:auto;
+  border-radius: 100%;
+}
+.header-content-info{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 10px 10px 0px;
+  background-color: transparent;
+  width: fit-content;
+  height: fit-content;
+}
+.icons1{
+  margin-bottom: 5px;
+}
+.aboutme-div{
+  font-size: 0.5em;
+  line-height:normal;
+  width: fit-content;
+  max-width: 300px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 30px;
+}
+.aboutme-text1{
+  font-family: "GlancyrVariable", sans-serif;
+  font-size: 1.1rem; /* Adjust for size preference */
+  line-height: 1.3; /* Balanced line height for readability */
+  color: #ffffff; /* White text for a modern look */
+  padding: 0px; 
+  margin: 0;
+  max-width: 400px;
+  width: fit-content;  
+  text-align: start; /* Centers text within the container */
+}
+.h1-header-popup{
+  padding: 0px;
+  position: absolute;
+  bottom: 5%;
+  left: 3%;
+}
+.h1-header-popup h1{
+  color: #5C47C2;
+  font-size: 4em;
+  margin: 0;
+
+}
+.h1-header-popup span{
+ color: #ECECEC;
+}
+.header-end-content1{
+  position: absolute;
+  width: fit-content;
+  bottom:10px;
+  right: 25%;
+  font-size: 1em;
+  background-color: #000;
+  padding: 10px;
+  border-radius: 50px 0px 50px 0px;
+}
+.header-end-content{
+  text-align: center;
+  font-size: 1em;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background-color: #000;
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid #ffffff;
+  border-radius: 50px;
+}
+.header-end-content p{
+  text-wrap: nowrap;
+  color: #ffffff;
+  font-size: 1.1em;
+}
+.fan-container {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  height: 100vh; /* Centering in viewport */
+  background-color: transparent; /* Optional background color */
+}
+.fan-image {
+  cursor: pointer; /* Change cursor on hover */
+}
+
+.a-arrow{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  font-size: 2.1em;
+  color: #ffffff;
+  background-color: #000;
+  transition: all 0.4s;
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 100%;
+  margin-left: 10px;
+}
+.a-arrow:hover{
+  color: #000;
+ background-color: #ffffff;
+}
+.pin-spacer{
+  background-color: #a695cf;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+.gallery-wrapper{
+  margin-top: 110px;
+  /* background-color: hsl(250, 50%, 52%); */
+  background-color: #a695cf;
+  width:fit-content;
+  height: 100vh;
+  padding: 0px;
+  display: flex;
+  justify-content:center;
+  align-items: start;
+}
+.gallery{
+  height:80vh;
+  min-height: 30em;
+  padding: 20px 30px;
+  margin-right: 20px;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: nowrap;
+  transition: all 0.2;
+}
+.gallery-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap:20px;
+}
+.gallery-image {
+  width: 60vw;
+  min-width: 50vw;
+  max-width: 65vw;
+  height: auto;
+  object-fit: cover;
+  mix-blend-mode: color-burn;
+ /*  filter: grayscale(0%);
+  --tw-scale-x: 1.01; Sets zoom level on the X-axis 
+ --tw-scale-y: 1.01; Sets zoom level on the Y-axis 
+  transform: scale(var(--tw-scale-x), var(--tw-scale-y)); 
+  transition: transform 0.7s ease;  Smooth transition */
+  border-radius: 1px;
+}
+.gallery-image:hover {
+ /*   --tw-scale-x: 1;
+  --tw-scale-y: 1; 
+  transform: scale(var(--tw-scale-x), var(--tw-scale-y));  
+  filter: grayscale(0%); Only add properties that change */
+}
+.project-link-text{
+  color: white;
+  font-family: "GlancyrVariable", sans-serif;
+  font-size: 2.5em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.project-link-text:hover{
+  color: #5C47C2;
+}
+.project-description{
+  margin: 0;
+  font-family: "GlancyrVariable", sans-serif;
+  color: #e2e2e2;
+  letter-spacing: 1px;
+}
+.Footer{
+  width: 100%;
+  height: 100vh;
+  background-color: #5C47C2;
+}
+.label {
+  margin: 0;
+  font-size: 2.5em;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.label::after {
+  content: 'POIMANDRES';
+}
+
+.caption {
+  font-size: 2.5em;
+  display: inline-block;
+  max-width: 500px;
+}
+
+.caption::after {
+  content: 'Open source developer collective for the creative space';
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #141622;
+  color: white;
+  height: 52px;
+  border-radius: 30px;
+  padding: 0em 2em;
+  white-space: pre;
+}
+
+.button.gray {
+  background: #ccc;
+  color: #141622;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    padding: 2em 4em 2em 4em;
+    gap: 2em;
+  }
+  .button {
+    height: 48px;
+    border-radius: 30px;
+    padding: 0em 2em;
+  }
+  .label {
+    font-size: 2em;
+  }
+  .caption {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 800px) {
+  .caption::after {
+    content: 'OSS dev collective  for the creative space';
+  }
+  .label::after {
+    content: 'PMNDRS';
+  }
+  .container {
+    padding: 2em 3em 2em 3em;
+    gap: 2em;
+  }
+  .button {
+    height: 36px;
+    border-radius: 30px;
+    padding: 0em 1.25em;
+    font-size: 0.7em;
+  }
+  .label {
+    font-size: 1em;
+  }
+  .caption {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 600px) {
+  .nav {
+    gap: 0.5em;
+  }
+  .caption::after {
+    content: 'OSS dev collective';
+  }
+  .container {
+    padding: 2em 2em 2em 2em;
+    gap: 2em;
+  }
+}
+
+
