@@ -8,9 +8,9 @@ import { easing } from 'maath'
 import { Text3D } from '@react-three/drei'
 
 import HeroSection from './HorizontalScroll'
-
+import AnimatedPointer from './AnimatedPointer'
 import CursorTrail from './CursorTrail'
-
+import Ballpit from './Ballpit'
 
 
 const accents = ['#D4BEE4', '#AD98E0', '#6455A5'];
@@ -31,7 +31,7 @@ export const App = () => (
   <>
 <div className="container" >
     <Scene className="Scene-canv" style={{ width: '75%', height: '90vh'}} />
-      <CursorTrail />
+    
     <div className="logo-container">
       <a href='#'>LIMITLESS</a>
     </div>
@@ -65,11 +65,15 @@ export const App = () => (
           </p>
         </div>
       </div>
-<div className='h1-header-popup'>
-  <h1>
-  <span> NO </span>LIMITS <br /><span> TO YOUR </span><br/> IDEAS
-  </h1>
-</div>
+      <div className='h1-header-popup'>
+        <h1>
+        <span> NO </span>LIMITS <br /><span> TO YOUR </span><br/> IDEAS
+        </h1>
+      </div>
+
+      <div className='animatedPointer'>
+          <AnimatedPointer />
+        </div>
 
       <div className='header-end-content1'>
         <div className='header-end-content'>
@@ -81,12 +85,23 @@ export const App = () => (
       </div>
   </div>
 
-         <div>
-         <HeroSection />
-         </div>
 
+        <div>
+          <CursorTrail />
+        </div>
+          
+        <div>
+          <HeroSection />
+        </div>
+        
+  
+         
+         
+         
+         
          <div className='Footer'>
-
+         {/* <Scene2 className="Scene-canv" style={{ width: '100%', height: '100vh'}} /> */}
+          <Ballpit />
          </div>
       </>
 )
@@ -117,6 +132,7 @@ function Scene(props) {
     </Canvas>
   )
 }
+
 
 function Connector({ position, children, vec = new THREE.Vector3(), scale, r = THREE.MathUtils.randFloatSpread, accent, ...props }) {
   const api = useRef()
@@ -150,7 +166,7 @@ function Pointer({ vec = new THREE.Vector3() }) {
 
 function Model({ children, color = 'white', roughness = 0, ...props }) {
   const ref = useRef()
-  const { nodes, materials } = useGLTF('/c-transformed.glb')
+  const { nodes, materials } = useGLTF('./model/c-transformed.glb')
   useFrame((state, delta) => {
     easing.dampC(ref.current.material.color, color, 0.2, delta)
   })
