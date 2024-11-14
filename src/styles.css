@@ -74,8 +74,7 @@ html {
   height: 130vh;
   width: 100%;
   min-height: 30em;
-  padding: 30px;
-
+  padding: 0px;
 }
 .container h1{
   font-size: 3em;
@@ -87,13 +86,13 @@ html {
   /* background: rgb(224, 222, 222);
   background: linear-gradient(0deg, rgba(224, 222, 222, 1) 0%, rgba(173, 152, 224, 1) 100%); */
   background: conic-gradient(from 45deg, #ccbbf3, #6455A5, #AD98E0);
-  border-radius: 50px 50px 50px 0px;
+  border-radius:0px;
 }
 .logo-container{
   background-color: #000;
   position: absolute;
-  top: 30px;
-  left: 30px;
+  top: 0px;
+  left: 0px;
   width: 300px;
   height: 120px;
   border-radius: 0px 0px 50px 0px;
@@ -102,89 +101,8 @@ html {
   align-items: center;
 }
 .logo-container a{
-  font-size: 3em;
+  font-size: 2em;
 }
-/* Sidebar Container Styling */
-.sidebar-container {
-  z-index: 9999999;
-  position: absolute;
-  top: 5%;
-  right: 5%;
-}
-/* Toggle Button */
-.toggle-sidebar {
-  background-color: transparent;
-  color: #000;
-  border: none;
-  font-size: 3em;
-  cursor: pointer;
- 
-}
-.close-sidebar{
-  position: absolute;
-  top: 5%;
-  right: 5%;
-  background-color: transparent;
-  color: #AD98E0;
-  border: none;
-  font-size: 4em;
-  cursor: pointer;
-}
-/* Sidebar Styling */
-.sidebar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #333;
-  color: white;
-  padding-top: 20px;
-  transform: translateX(-100%);
-  transition: transform 0.3s ease;
-}
-
-/* Open Sidebar */
-.sidebar.open {
-  transform: translateX(0);
-}
-.sidebar nav ul {
-  font-family: "GlancyrThin", sans-serif;
-  background-color: #6455A5;
-  border-radius: 15px;
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: start;
-  margin: 0px;
-  text-decoration: none;
-  list-style: none;
-  font-size: 2rem;
-  padding: 5px;
-  letter-spacing: 2px;
-  z-index: 99999;
-}
-
-.sidebar nav ul li {
-  font-size: 3em;
-  color: #ECECEC;
-  margin: 0px;
-  padding: 15px 30px;
-  text-decoration: none;
-  list-style: none;
-  transition: all 0.4s;
-}
-.sidebar nav ul li:hover{
-  color: #AD98E0;
-  border-radius: 15px;
-  margin: 0px;
-  padding: 15px 30px;
-  text-decoration: none;
-  list-style: none;
-}
-
 
 a{
   all: unset;
@@ -284,16 +202,16 @@ a{
 }
 .h1-header-popup{
   position: absolute;
-  left: 5%;
-  bottom: -20%;
-  padding: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  text-align: center;
   z-index: 1;
 }
 .h1-header-popup h1{
   color: #AD98E0;
   font-size: 4em;
   margin: 0;
-
 }
 .h1-header-popup span{
  color: #ffffff;
@@ -317,8 +235,10 @@ a{
 }
 .animatedPointer{
     position: absolute;
-    bottom: -20%;
-    right:5% ;
+    text-align: center;
+    bottom: -10%;
+    right:0px;
+    left: 0px;
 }
 .header-end-content{
   text-align: center;

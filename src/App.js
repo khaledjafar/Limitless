@@ -46,7 +46,6 @@ export const App = () => (
       
       <div className="sidebar-container">
       <Sidebar />
-
       </div>
       <div className='h1-header-popup'>
           <h1>
