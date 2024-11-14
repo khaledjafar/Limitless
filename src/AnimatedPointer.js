@@ -20,11 +20,10 @@ const AnimatedPointer = () => {
         ref={pointerRef} 
         style={{
           fontSize: '1rem',
-          cursor: 'pointer'
 
         }}
       >
-        {/* 👆  <br /> */}Click On The Screen 
+        {/* 👆  <br /> */}Check Out My Latest Work <br />👇
       </div>
     </div>
   );

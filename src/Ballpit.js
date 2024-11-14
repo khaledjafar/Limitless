@@ -80,8 +80,8 @@ const Ballpit = () => {
   }
 
   return (
-    <Canvas orthographic camera={{ position: [0, 0, 100], zoom: 100 }}>
-      <Physics gravity={[0, -150, 0]}>
+    <Canvas orthographic camera={{ position: [0, 0, 100], zoom: 32 }}>
+      <Physics gravity={[0, 0, -10]}>
         <group position={[0, 0, -10]}>
           <Mouse />
           <Borders />
