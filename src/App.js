@@ -15,7 +15,6 @@ import InfiniteSlider from './InfiniteSlider'
 import CustomCursor from './CursorTrail'
 import Ballpit from './Ballpit'
 
-
 const accents = ['#D4BEE4', '#AD98E0', '#b98df7'];
 const shuffle = (accent = 0) => [
   { color: '#444', roughness: 0.2, metalness: 0.5 },  
