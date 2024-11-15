@@ -6,7 +6,6 @@ import { CuboidCollider, BallCollider, Physics, RigidBody } from '@react-three/r
 import { EffectComposer, N8AO } from '@react-three/postprocessing'
 import { easing } from 'maath'
 import { Text3D } from '@react-three/drei'
-import { sRGBEncoding } from 'three';
 
 
 import HeroSection from './HorizontalScroll'

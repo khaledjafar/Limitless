@@ -1,41 +1,48 @@
 {
-  "name": "basic-ballpit",
-  "version": "1.0.0",
-  "description": "Physics simulation using cannon.",
-  "keywords": [
-    "physics",
-    "cannon"
-  ],
-  "main": "src/index.js",
+  "name": "my-app",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "@react-three/cannon": "6.3.0",
-    "@react-three/drei": "^9.116.2",
+    "@react-three/cannon": "^6.6.0",
+    "@react-three/drei": "^9.114.6",
     "@react-three/fiber": "^8.17.10",
-    "@react-three/postprocessing": "2.3.3",
+    "@react-three/postprocessing": "^2.16.3",
     "@react-three/rapier": "^1.5.0",
     "@studio-freight/lenis": "^1.0.42",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
     "gsap": "^3.12.5",
-    "maath": "^0.10.8",
-    "nice-color-palettes": "3.0.0",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "react-scripts": "5.0.1",
-    "three": "^0.170.0"
-  },
-  "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
-    "typescript": "3.8.3"
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
+    "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ]
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.2.0"
+  }
 }
