@@ -45,7 +45,7 @@ export const App = () => (
       </div>
       
       <div className="sidebar-container">
-      <Sidebar />
+        <Sidebar />
       </div>
       <div className='h1-header-popup'>
           <h1>
@@ -107,7 +107,10 @@ export const App = () => (
                 </div> */}
 
           </div>
-          <Footer />
+          <div className='Footer'>
+            <Footer />
+          </div>
+          
         </div>
 
        {/*  <div className='Footer'>
@@ -230,8 +233,10 @@ function ResponsiveText({ text = "Limitless" }) {
 
   function getResponsiveFontSize() {
       const width = window.innerWidth 
-      if (width < 413) return 0.6 
-      return 0.6              
+      if (width <= 380) return 0.3 ;
+      if (width <= 570) return 0.4 ;
+      
+      return 0.6    ;          
     }
 
     useEffect(() => {
@@ -247,8 +252,10 @@ function ResponsiveText({ text = "Limitless" }) {
 
   function getResponsivePosition() {
       const width = window.innerWidth
-      if (width < 413) return [-1.4, 0, -1]  
-      return [-1.6, 0, -1]                   
+      if (width <= 380) return [-0.78, 0, -1] ; 
+      if (width <= 570) return [-1.05, 0, -1] ; 
+     
+      return [-1.58, 0, -1]  ;                 
     }
 
     useEffect(() => {

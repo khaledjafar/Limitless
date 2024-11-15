@@ -27,14 +27,14 @@ const Footer = () => {
      
      
       <div className='footer-details2'>
-        <div className="footer-links">
+        {/* <div className="footer-links">
           <ul>
             <li className='footer-home-li'><a href="#Home">Home</a></li>
             <li className='footer-home-li'><a href="#Projects">Projects</a></li>
             <li className='footer-home-li'><a href="#Footer">About</a></li>
             <li className='footer-home-li'><a href="#Footer">Contact</a></li>
           </ul>
-        </div>
+        </div> */}
         
         <div className="footer-contact">
           <h3>Contact</h3>
