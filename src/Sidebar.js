@@ -10,7 +10,10 @@ function Sidebar() {
 
   return (
     <>
-      <button className="toggle-sidebar" onClick={toggleSidebar}>
+      <button
+        className={`toggle-sidebar ${isOpen ? 'rotate' : ''}`}
+        onClick={toggleSidebar}
+      >
         {isOpen ? '✖' : '☰'}
       </button>
       <div className={`sidebar ${isOpen ? 'open' : ''}`}>

@@ -6,11 +6,11 @@ const AnimatedPointer = () => {
 
   useEffect(() => {
     gsap.to(pointerRef.current, {
-      y: -10,                // Move up 10 pixels
-      duration: 0.6,         // Animation duration
-      yoyo: true,            // Reverses the animation (up and down)
-      repeat: -1,            // Infinite repeat
-      ease: "power1.inOut",  // Smooth easing
+      y: -10,                
+      duration: 0.6,        
+      yoyo: true,            
+      repeat: -1,            
+      ease: "power1.inOut", 
     });
   }, []);
 
@@ -19,11 +19,12 @@ const AnimatedPointer = () => {
       <div 
         ref={pointerRef} 
         style={{
-          fontSize: '1rem',
+          fontSize: '1.2rem',
+          color: '#fff'
 
         }}
       >
-        {/* 👆  <br /> */}Check Out My Latest Work <br />👇
+        Check Out My Latest Work <br /><br /><i class='bx bx-down-arrow-alt'></i> {/*👇 */}
       </div>
     </div>
   );
